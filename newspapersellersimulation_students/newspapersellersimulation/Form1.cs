@@ -33,18 +33,8 @@ namespace NewspaperSellerSimulation
         private void RunSystem()
         {
             ReadDate(@"F:\College Year 4\Year 4 [CS]\simulation\Labs\Lab 5\simulation-task-2\newspapersellersimulation_students\newspapersellersimulation\TestCases\TestCase1.txt");
-            int numOfNewspapers = Convert.ToInt32(purch_num_txt.Text);
-            int numOfRecords = Convert.ToInt32(days_count_txt.Text);
-            double purchasePrice = Convert.ToDouble(purch_price_txt.Text);
-            double sellingPrice = Convert.ToDouble(selling_price_txt.Text);
-            double scrapPrice = Convert.ToDouble(scrap_price_txt.Text);
-
-            _handler = new Handler(input_GV, input2_GV, numOfNewspapers, numOfRecords, purchasePrice, sellingPrice, scrapPrice);
-            _handler.Main_Handler();
-            ShowData();
-            string testResult = TestingManager.Test(_handler._system, Constants.FileNames.TestCase1);
-            MessageBox.Show(testResult);
         }
+
         private void ShowData()
         {
             foreach (var simCase in _handler._system.SimulationCases)
@@ -106,11 +96,38 @@ namespace NewspaperSellerSimulation
             {
                 RunSystem();
             }
-            else
+            else if (e.KeyCode == Keys.F1)
             {
-                MessageBox.Show(@"Please Press F5 To Run",@"Information",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                GetResults();
             }
+            else if (e.KeyCode == Keys.F7)
+            {
+                string path =
+                    @"F:\College Year 4\Year 4 [CS]\simulation\Labs\Lab 5\simulation-task-2\newspapersellersimulation_students\newspapersellersimulation\TestCases\Outs.txt";
+                GetBestProfit(purch_num_txt.Text, net_profit_txt.Text,path);
+                MessageBox.Show(@"Saved Successfully", @"Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            
 
+        }
+
+        private void GetResults()
+        {
+            int numOfNewspapers = Convert.ToInt32(purch_num_txt.Text);
+            int numOfRecords = Convert.ToInt32(days_count_txt.Text);
+            double purchasePrice = Convert.ToDouble(purch_price_txt.Text);
+            double sellingPrice = Convert.ToDouble(selling_price_txt.Text);
+            double scrapPrice = Convert.ToDouble(scrap_price_txt.Text);
+            _handler = new Handler(input_GV, input2_GV, numOfNewspapers, numOfRecords, purchasePrice, sellingPrice, scrapPrice);
+            _handler.Main_Handler();
+            ShowData();
+            string testResult = TestingManager.Test(_handler._system, Constants.FileNames.TestCase1);
+            MessageBox.Show(testResult);
+        }
+
+        private void GetBestProfit(string numOfNewspapers, string totalNet,String FilePath)
+        {
+            _data.SaveOuts(numOfNewspapers,totalNet,FilePath);
         }
     }
 }

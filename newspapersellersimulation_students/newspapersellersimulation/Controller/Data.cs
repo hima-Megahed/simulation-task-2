@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using Microsoft.SqlServer.Server;
 using NewspaperSellerModels;
 
 namespace NewspaperSellerSimulation.Controller
@@ -45,7 +46,7 @@ namespace NewspaperSellerSimulation.Controller
             }
 
             ///////////////
-            for (var i= 0; i < _linesList.Count; i++)
+            for (var i = 0; i < _linesList.Count; i++)
             {
                 if (_linesList[i].Contains("NumOfNewspapers"))
                 {
@@ -67,9 +68,9 @@ namespace NewspaperSellerSimulation.Controller
                 {
                     SellingPrice = Convert.ToDouble(_linesList[++i]);
                 }
-                else if(_linesList[i].Contains("DayTypeDistributions"))
+                else if (_linesList[i].Contains("DayTypeDistributions"))
                 {
-                    string[] split = _linesList[++i].Replace(" ","").Split(',');
+                    string[] split = _linesList[++i].Replace(" ", "").Split(',');
                     DayTypeDistributioGood = Convert.ToDouble(split[0]);
                     DayTypeDistributioFair = Convert.ToDouble(split[1]);
                     DayTypeDistributioPoor = Convert.ToDouble(split[2]);
@@ -79,23 +80,49 @@ namespace NewspaperSellerSimulation.Controller
                     for (int j = 0; j < 7; j++)
                     {
                         string[] split = _linesList[++i].Replace(" ", "").Split(',');
-                        var demandDistribution = new DemandDistribution {Demand = Convert.ToInt32(split[0])};
+                        var demandDistribution = new DemandDistribution { Demand = Convert.ToInt32(split[0]) };
                         demandDistribution.DayTypeDistributions.Add(new DayTypeDistribution()
                         {
-                            DayType = Enums.DayType.Good,Probability = Convert.ToDouble(split[1])
+                            DayType = Enums.DayType.Good,
+                            Probability = Convert.ToDouble(split[1])
                         });
                         demandDistribution.DayTypeDistributions.Add(new DayTypeDistribution()
                         {
-                            DayType = Enums.DayType.Fair,Probability = Convert.ToDouble(split[2])
+                            DayType = Enums.DayType.Fair,
+                            Probability = Convert.ToDouble(split[2])
                         });
                         demandDistribution.DayTypeDistributions.Add(new DayTypeDistribution()
                         {
-                            DayType = Enums.DayType.Poor,Probability = Convert.ToDouble(split[3])
+                            DayType = Enums.DayType.Poor,
+                            Probability = Convert.ToDouble(split[3])
                         });
                         DemandDistributions.Add(demandDistribution);
                     }
                 }
             }
+            streamReader.Close();
+        }
+
+        public void SaveOuts(string numberOfNewspapres, string totalNet,string path)
+        {
+            if (!File.Exists(path))
+            {
+                StreamWriter sw = File.CreateText(path);
+
+                //Write a line of text
+                sw.WriteLine("NumOfNewspapers");
+                sw.WriteLine(numberOfNewspapres);
+                sw.WriteLine("TotalNetProfit");
+                sw.WriteLine(totalNet);
+
+                //Close the file
+                sw.Close();
+            }
+            else
+            {
+                File.AppendAllText(path, Environment.NewLine + @"NumOfNewspapers" + Environment.NewLine + numberOfNewspapres +
+                    Environment.NewLine + @"TotalNetProfit" + totalNet);
+            }  
         }
 
     }
