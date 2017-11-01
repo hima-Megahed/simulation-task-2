@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn_run = new System.Windows.Forms.Button();
             this.purch_price_txt = new System.Windows.Forms.TextBox();
             this.selling_price_txt = new System.Windows.Forms.TextBox();
             this.scrap_price_txt = new System.Windows.Forms.TextBox();
@@ -68,32 +67,21 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.input_GV = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.input2_GV = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.out_GV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.input_GV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.input2_GV)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btn_run
-            // 
-            this.btn_run.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_run.Location = new System.Drawing.Point(391, 268);
-            this.btn_run.Name = "btn_run";
-            this.btn_run.Size = new System.Drawing.Size(115, 46);
-            this.btn_run.TabIndex = 1;
-            this.btn_run.Text = "Run";
-            this.btn_run.UseVisualStyleBackColor = true;
-            this.btn_run.Click += new System.EventHandler(this.btn_run_Click);
             // 
             // purch_price_txt
             // 
@@ -175,7 +163,7 @@
             this.Excess_demand,
             this.scrap,
             this.daily_profit});
-            this.out_GV.Location = new System.Drawing.Point(12, 320);
+            this.out_GV.Location = new System.Drawing.Point(12, 277);
             this.out_GV.Name = "out_GV";
             this.out_GV.ReadOnly = true;
             this.out_GV.Size = new System.Drawing.Size(1070, 401);
@@ -409,28 +397,8 @@
             this.dataGridViewTextBoxColumn4});
             this.input_GV.Location = new System.Drawing.Point(317, 25);
             this.input_GV.Name = "input_GV";
-            this.input_GV.Size = new System.Drawing.Size(403, 237);
+            this.input_GV.Size = new System.Drawing.Size(403, 246);
             this.input_GV.TabIndex = 33;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Type Of Newsday";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Propability";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "Cummlative Probability";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "Random-Digit Assignment";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
             // input2_GV
             // 
@@ -446,7 +414,7 @@
             this.input2_GV.GridColor = System.Drawing.SystemColors.ControlLight;
             this.input2_GV.Location = new System.Drawing.Point(12, 25);
             this.input2_GV.Name = "input2_GV";
-            this.input2_GV.Size = new System.Drawing.Size(299, 237);
+            this.input2_GV.Size = new System.Drawing.Size(299, 246);
             this.input2_GV.TabIndex = 34;
             // 
             // dataGridViewTextBoxColumn5
@@ -469,11 +437,33 @@
             this.dataGridViewTextBoxColumn8.HeaderText = "Poor";
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "Type Of Newsday";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "Propability";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "Cummlative Probability";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.HeaderText = "Random-Digit Assignment";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1094, 733);
+            this.ClientSize = new System.Drawing.Size(1094, 679);
             this.Controls.Add(this.input2_GV);
             this.Controls.Add(this.input_GV);
             this.Controls.Add(this.pictureBox2);
@@ -505,9 +495,9 @@
             this.Controls.Add(this.scrap_price_txt);
             this.Controls.Add(this.selling_price_txt);
             this.Controls.Add(this.purch_price_txt);
-            this.Controls.Add(this.btn_run);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.out_GV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -519,7 +509,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button btn_run;
         private System.Windows.Forms.TextBox purch_price_txt;
         private System.Windows.Forms.TextBox selling_price_txt;
         private System.Windows.Forms.TextBox scrap_price_txt;
@@ -559,14 +548,14 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn scrap;
         private System.Windows.Forms.DataGridViewTextBoxColumn daily_profit;
         private System.Windows.Forms.DataGridView input_GV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridView input2_GV;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
     }
 }
