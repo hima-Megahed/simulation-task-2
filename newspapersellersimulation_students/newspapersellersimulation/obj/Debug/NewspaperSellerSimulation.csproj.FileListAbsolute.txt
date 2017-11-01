@@ -54,3 +54,4 @@ F:\College Year 4\Year 4 [CS]\simulation\Labs\Lab 5\simulation-task-2\newspapers
 F:\College Year 4\Year 4 [CS]\simulation\Labs\Lab 5\simulation-task-2\newspapersellersimulation_students\NewspaperSellerSimulation\obj\Debug\NewspaperSellerSimulation.csproj.CoreCompileInputs.cache
 F:\College Year 4\Year 4 [CS]\simulation\Labs\Lab 5\simulation-task-2\newspapersellersimulation_students\NewspaperSellerSimulation\obj\Debug\NewspaperSellerSimulation.exe
 F:\College Year 4\Year 4 [CS]\simulation\Labs\Lab 5\simulation-task-2\newspapersellersimulation_students\NewspaperSellerSimulation\obj\Debug\NewspaperSellerSimulation.pdb
+F:\College Year 4\Year 4 [CS]\simulation\Labs\Lab 5\simulation-task-2\newspapersellersimulation_students\NewspaperSellerSimulation\bin\Debug\NewspaperSellerTesting.dll
