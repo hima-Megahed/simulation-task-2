@@ -67,15 +67,15 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.input_GV = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.input2_GV = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.out_GV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -109,7 +109,7 @@
             this.purch_num_txt.Location = new System.Drawing.Point(786, 47);
             this.purch_num_txt.Name = "purch_num_txt";
             this.purch_num_txt.Size = new System.Drawing.Size(100, 20);
-            this.purch_num_txt.TabIndex = 6;
+            this.purch_num_txt.TabIndex = 1;
             // 
             // label1
             // 
@@ -173,46 +173,55 @@
             // 
             this.day.HeaderText = "Day";
             this.day.Name = "day";
+            this.day.ReadOnly = true;
             // 
             // Random_day
             // 
             this.Random_day.HeaderText = "Random Digits Type Newsday";
             this.Random_day.Name = "Random_day";
+            this.Random_day.ReadOnly = true;
             // 
             // day_type
             // 
             this.day_type.HeaderText = "Type of Newsday";
             this.day_type.Name = "day_type";
+            this.day_type.ReadOnly = true;
             // 
             // demand_random
             // 
             this.demand_random.HeaderText = "Random Digits For Demand";
             this.demand_random.Name = "demand_random";
+            this.demand_random.ReadOnly = true;
             // 
             // Demand_count
             // 
             this.Demand_count.HeaderText = "Demand";
             this.Demand_count.Name = "Demand_count";
+            this.Demand_count.ReadOnly = true;
             // 
             // sales
             // 
             this.sales.HeaderText = "Sales Revenue";
             this.sales.Name = "sales";
+            this.sales.ReadOnly = true;
             // 
             // Excess_demand
             // 
             this.Excess_demand.HeaderText = "Lost Profit Excess demand";
             this.Excess_demand.Name = "Excess_demand";
+            this.Excess_demand.ReadOnly = true;
             // 
             // scrap
             // 
             this.scrap.HeaderText = "Scrap Salvage";
             this.scrap.Name = "scrap";
+            this.scrap.ReadOnly = true;
             // 
             // daily_profit
             // 
             this.daily_profit.HeaderText = "Daily Profit";
             this.daily_profit.Name = "daily_profit";
+            this.daily_profit.ReadOnly = true;
             // 
             // revenue_txt
             // 
@@ -338,7 +347,7 @@
             this.days_count_txt.Location = new System.Drawing.Point(786, 86);
             this.days_count_txt.Name = "days_count_txt";
             this.days_count_txt.Size = new System.Drawing.Size(100, 20);
-            this.days_count_txt.TabIndex = 27;
+            this.days_count_txt.TabIndex = 2;
             // 
             // label6
             // 
@@ -398,44 +407,7 @@
             this.input_GV.Location = new System.Drawing.Point(317, 25);
             this.input_GV.Name = "input_GV";
             this.input_GV.Size = new System.Drawing.Size(403, 246);
-            this.input_GV.TabIndex = 33;
-            // 
-            // input2_GV
-            // 
-            this.input2_GV.AllowUserToDeleteRows = false;
-            this.input2_GV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.input2_GV.BackgroundColor = System.Drawing.SystemColors.ControlLight;
-            this.input2_GV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.input2_GV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8});
-            this.input2_GV.GridColor = System.Drawing.SystemColors.ControlLight;
-            this.input2_GV.Location = new System.Drawing.Point(12, 25);
-            this.input2_GV.Name = "input2_GV";
-            this.input2_GV.Size = new System.Drawing.Size(299, 246);
-            this.input2_GV.TabIndex = 34;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.HeaderText = "Demand";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.HeaderText = "Good";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.HeaderText = "Fair";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.HeaderText = "Poor";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.input_GV.TabIndex = 6;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -458,6 +430,43 @@
             this.dataGridViewTextBoxColumn4.HeaderText = "Random-Digit Assignment";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.Visible = false;
+            // 
+            // input2_GV
+            // 
+            this.input2_GV.AllowUserToDeleteRows = false;
+            this.input2_GV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.input2_GV.BackgroundColor = System.Drawing.SystemColors.ControlLight;
+            this.input2_GV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.input2_GV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8});
+            this.input2_GV.GridColor = System.Drawing.SystemColors.ControlLight;
+            this.input2_GV.Location = new System.Drawing.Point(12, 25);
+            this.input2_GV.Name = "input2_GV";
+            this.input2_GV.Size = new System.Drawing.Size(299, 246);
+            this.input2_GV.TabIndex = 7;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.HeaderText = "Demand";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.HeaderText = "Good";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.HeaderText = "Fair";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.HeaderText = "Poor";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             // 
             // Form1
             // 

@@ -12,7 +12,7 @@ namespace NewspaperSellerSimulation.Controller
 {
     class Data
     {
-        private readonly string _fileName;
+        public string _fileName;
         private string _tempLine;
         private readonly List<string> _linesList;
         public int NumOfNewspapers;

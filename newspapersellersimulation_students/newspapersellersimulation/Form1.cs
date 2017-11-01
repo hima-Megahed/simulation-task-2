@@ -23,12 +23,9 @@ namespace NewspaperSellerSimulation
         {
             InitializeComponent();
             KeyPreview = true;
+            _data = new Data();
         }
 
-        private void btn_run_Click(object sender, EventArgs e)
-        {
-            
-        }
 
         private void RunSystem()
         {
@@ -62,7 +59,7 @@ namespace NewspaperSellerSimulation
 
         private void ReadDate(string fileName)
         {
-            _data = new Data(fileName);
+            _data._fileName = fileName;
             _data.Process();
             purch_num_txt.Text = _data.NumOfNewspapers.ToString();
             days_count_txt.Text = _data.NumOfRecords.ToString();
