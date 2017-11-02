@@ -126,5 +126,23 @@ namespace NewspaperSellerSimulation
         {
             _data.SaveOuts(numOfNewspapers,totalNet,FilePath);
         }
+
+        private void readFromFileF5ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RunSystem();
+        }
+
+        private void saveOutsF7ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string path =
+                @"F:\College Year 4\Year 4 [CS]\simulation\Labs\Lab 5\simulation-task-2\newspapersellersimulation_students\newspapersellersimulation\TestCases\Outs.txt";
+            GetBestProfit(purch_num_txt.Text, net_profit_txt.Text, path);
+            MessageBox.Show(@"Saved Successfully", @"Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void runSimulationF1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GetResults();
+        }
     }
 }

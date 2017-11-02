@@ -76,37 +76,44 @@
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.readFromFileF5ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveOutsF7ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.runToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.runSimulationF1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.out_GV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.input_GV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.input2_GV)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // purch_price_txt
             // 
-            this.purch_price_txt.Location = new System.Drawing.Point(948, 164);
+            this.purch_price_txt.Location = new System.Drawing.Point(948, 184);
             this.purch_price_txt.Name = "purch_price_txt";
             this.purch_price_txt.Size = new System.Drawing.Size(100, 20);
             this.purch_price_txt.TabIndex = 3;
             // 
             // selling_price_txt
             // 
-            this.selling_price_txt.Location = new System.Drawing.Point(948, 203);
+            this.selling_price_txt.Location = new System.Drawing.Point(948, 223);
             this.selling_price_txt.Name = "selling_price_txt";
             this.selling_price_txt.Size = new System.Drawing.Size(100, 20);
             this.selling_price_txt.TabIndex = 4;
             // 
             // scrap_price_txt
             // 
-            this.scrap_price_txt.Location = new System.Drawing.Point(948, 242);
+            this.scrap_price_txt.Location = new System.Drawing.Point(948, 262);
             this.scrap_price_txt.Name = "scrap_price_txt";
             this.scrap_price_txt.Size = new System.Drawing.Size(100, 20);
             this.scrap_price_txt.TabIndex = 5;
             // 
             // purch_num_txt
             // 
-            this.purch_num_txt.Location = new System.Drawing.Point(786, 47);
+            this.purch_num_txt.Location = new System.Drawing.Point(786, 67);
             this.purch_num_txt.Name = "purch_num_txt";
             this.purch_num_txt.Size = new System.Drawing.Size(100, 20);
             this.purch_num_txt.TabIndex = 1;
@@ -114,7 +121,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(925, 148);
+            this.label1.Location = new System.Drawing.Point(925, 168);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(79, 13);
             this.label1.TabIndex = 7;
@@ -123,7 +130,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(925, 187);
+            this.label2.Location = new System.Drawing.Point(925, 207);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 13);
             this.label2.TabIndex = 8;
@@ -132,7 +139,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(925, 226);
+            this.label3.Location = new System.Drawing.Point(925, 246);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 13);
             this.label3.TabIndex = 9;
@@ -141,7 +148,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(748, 31);
+            this.label4.Location = new System.Drawing.Point(748, 51);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(120, 13);
             this.label4.TabIndex = 10;
@@ -163,7 +170,7 @@
             this.Excess_demand,
             this.scrap,
             this.daily_profit});
-            this.out_GV.Location = new System.Drawing.Point(12, 277);
+            this.out_GV.Location = new System.Drawing.Point(12, 299);
             this.out_GV.Name = "out_GV";
             this.out_GV.ReadOnly = true;
             this.out_GV.Size = new System.Drawing.Size(1070, 401);
@@ -225,7 +232,7 @@
             // 
             // revenue_txt
             // 
-            this.revenue_txt.Location = new System.Drawing.Point(786, 125);
+            this.revenue_txt.Location = new System.Drawing.Point(786, 145);
             this.revenue_txt.Name = "revenue_txt";
             this.revenue_txt.ReadOnly = true;
             this.revenue_txt.Size = new System.Drawing.Size(100, 20);
@@ -233,7 +240,7 @@
             // 
             // cost_txt
             // 
-            this.cost_txt.Location = new System.Drawing.Point(786, 164);
+            this.cost_txt.Location = new System.Drawing.Point(786, 184);
             this.cost_txt.Name = "cost_txt";
             this.cost_txt.ReadOnly = true;
             this.cost_txt.Size = new System.Drawing.Size(100, 20);
@@ -241,7 +248,7 @@
             // 
             // excess_lost_txt
             // 
-            this.excess_lost_txt.Location = new System.Drawing.Point(786, 203);
+            this.excess_lost_txt.Location = new System.Drawing.Point(786, 223);
             this.excess_lost_txt.Name = "excess_lost_txt";
             this.excess_lost_txt.ReadOnly = true;
             this.excess_lost_txt.Size = new System.Drawing.Size(100, 20);
@@ -249,7 +256,7 @@
             // 
             // scrap_txt
             // 
-            this.scrap_txt.Location = new System.Drawing.Point(786, 242);
+            this.scrap_txt.Location = new System.Drawing.Point(786, 262);
             this.scrap_txt.Name = "scrap_txt";
             this.scrap_txt.ReadOnly = true;
             this.scrap_txt.Size = new System.Drawing.Size(100, 20);
@@ -257,7 +264,7 @@
             // 
             // net_profit_txt
             // 
-            this.net_profit_txt.Location = new System.Drawing.Point(948, 47);
+            this.net_profit_txt.Location = new System.Drawing.Point(948, 67);
             this.net_profit_txt.Name = "net_profit_txt";
             this.net_profit_txt.ReadOnly = true;
             this.net_profit_txt.Size = new System.Drawing.Size(100, 20);
@@ -265,7 +272,7 @@
             // 
             // excess_days_txt
             // 
-            this.excess_days_txt.Location = new System.Drawing.Point(948, 86);
+            this.excess_days_txt.Location = new System.Drawing.Point(948, 106);
             this.excess_days_txt.Name = "excess_days_txt";
             this.excess_days_txt.ReadOnly = true;
             this.excess_days_txt.Size = new System.Drawing.Size(100, 20);
@@ -273,7 +280,7 @@
             // 
             // scrap_days_txt
             // 
-            this.scrap_days_txt.Location = new System.Drawing.Point(948, 125);
+            this.scrap_days_txt.Location = new System.Drawing.Point(948, 145);
             this.scrap_days_txt.Name = "scrap_days_txt";
             this.scrap_days_txt.ReadOnly = true;
             this.scrap_days_txt.Size = new System.Drawing.Size(100, 20);
@@ -282,7 +289,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(748, 109);
+            this.label5.Location = new System.Drawing.Point(748, 129);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(100, 13);
             this.label5.TabIndex = 19;
@@ -291,7 +298,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(748, 148);
+            this.label7.Location = new System.Drawing.Point(748, 168);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(101, 13);
             this.label7.TabIndex = 21;
@@ -300,7 +307,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(748, 187);
+            this.label8.Location = new System.Drawing.Point(748, 207);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(150, 13);
             this.label8.TabIndex = 22;
@@ -309,7 +316,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(748, 226);
+            this.label9.Location = new System.Drawing.Point(748, 246);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(123, 13);
             this.label9.TabIndex = 23;
@@ -318,7 +325,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(925, 31);
+            this.label10.Location = new System.Drawing.Point(925, 51);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(50, 13);
             this.label10.TabIndex = 24;
@@ -327,7 +334,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(925, 70);
+            this.label11.Location = new System.Drawing.Point(925, 90);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(135, 13);
             this.label11.TabIndex = 25;
@@ -336,7 +343,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(925, 109);
+            this.label12.Location = new System.Drawing.Point(925, 129);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(82, 13);
             this.label12.TabIndex = 26;
@@ -344,7 +351,7 @@
             // 
             // days_count_txt
             // 
-            this.days_count_txt.Location = new System.Drawing.Point(786, 86);
+            this.days_count_txt.Location = new System.Drawing.Point(786, 106);
             this.days_count_txt.Name = "days_count_txt";
             this.days_count_txt.Size = new System.Drawing.Size(100, 20);
             this.days_count_txt.TabIndex = 2;
@@ -352,7 +359,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(748, 70);
+            this.label6.Location = new System.Drawing.Point(748, 90);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(81, 13);
             this.label6.TabIndex = 28;
@@ -361,7 +368,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(66, 9);
+            this.label13.Location = new System.Drawing.Point(66, 31);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(188, 13);
             this.label13.TabIndex = 29;
@@ -370,7 +377,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(407, 9);
+            this.label14.Location = new System.Drawing.Point(407, 31);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(229, 13);
             this.label14.TabIndex = 30;
@@ -379,7 +386,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::NewspaperSellerSimulation.Properties.Resources.Blank;
-            this.pictureBox2.Location = new System.Drawing.Point(801, 269);
+            this.pictureBox2.Location = new System.Drawing.Point(801, 289);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(237, 2);
             this.pictureBox2.TabIndex = 32;
@@ -388,7 +395,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::NewspaperSellerSimulation.Properties.Resources.Blank;
-            this.pictureBox1.Location = new System.Drawing.Point(911, 74);
+            this.pictureBox1.Location = new System.Drawing.Point(911, 94);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(2, 153);
             this.pictureBox1.TabIndex = 31;
@@ -404,7 +411,7 @@
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
-            this.input_GV.Location = new System.Drawing.Point(317, 25);
+            this.input_GV.Location = new System.Drawing.Point(317, 47);
             this.input_GV.Name = "input_GV";
             this.input_GV.Size = new System.Drawing.Size(403, 246);
             this.input_GV.TabIndex = 6;
@@ -443,7 +450,7 @@
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8});
             this.input2_GV.GridColor = System.Drawing.SystemColors.ControlLight;
-            this.input2_GV.Location = new System.Drawing.Point(12, 25);
+            this.input2_GV.Location = new System.Drawing.Point(12, 47);
             this.input2_GV.Name = "input2_GV";
             this.input2_GV.Size = new System.Drawing.Size(299, 246);
             this.input2_GV.TabIndex = 7;
@@ -467,6 +474,55 @@
             // 
             this.dataGridViewTextBoxColumn8.HeaderText = "Poor";
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.runToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1094, 24);
+            this.menuStrip1.TabIndex = 33;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.readFromFileF5ToolStripMenuItem,
+            this.saveOutsF7ToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // readFromFileF5ToolStripMenuItem
+            // 
+            this.readFromFileF5ToolStripMenuItem.Name = "readFromFileF5ToolStripMenuItem";
+            this.readFromFileF5ToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.readFromFileF5ToolStripMenuItem.Text = "Read From File (F5)";
+            this.readFromFileF5ToolStripMenuItem.Click += new System.EventHandler(this.readFromFileF5ToolStripMenuItem_Click);
+            // 
+            // saveOutsF7ToolStripMenuItem
+            // 
+            this.saveOutsF7ToolStripMenuItem.Name = "saveOutsF7ToolStripMenuItem";
+            this.saveOutsF7ToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.saveOutsF7ToolStripMenuItem.Text = "Save Outs (F7)";
+            this.saveOutsF7ToolStripMenuItem.Click += new System.EventHandler(this.saveOutsF7ToolStripMenuItem_Click);
+            // 
+            // runToolStripMenuItem
+            // 
+            this.runToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.runSimulationF1ToolStripMenuItem});
+            this.runToolStripMenuItem.Name = "runToolStripMenuItem";
+            this.runToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
+            this.runToolStripMenuItem.Text = "Run";
+            // 
+            // runSimulationF1ToolStripMenuItem
+            // 
+            this.runSimulationF1ToolStripMenuItem.Name = "runSimulationF1ToolStripMenuItem";
+            this.runSimulationF1ToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.runSimulationF1ToolStripMenuItem.Text = "Run Simulation (F1)";
+            this.runSimulationF1ToolStripMenuItem.Click += new System.EventHandler(this.runSimulationF1ToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -504,14 +560,18 @@
             this.Controls.Add(this.scrap_price_txt);
             this.Controls.Add(this.selling_price_txt);
             this.Controls.Add(this.purch_price_txt);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Simulation";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.out_GV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.input_GV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.input2_GV)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -566,5 +626,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem readFromFileF5ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem saveOutsF7ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem runToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem runSimulationF1ToolStripMenuItem;
     }
 }

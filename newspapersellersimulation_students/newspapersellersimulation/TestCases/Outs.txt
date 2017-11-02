@@ -1,0 +1,9 @@
+NumOfNewspapers
+70
+TotalNetProfit
+150.7
+
+NumOfNewspapers
+70
+TotalNetProfit
+160.8

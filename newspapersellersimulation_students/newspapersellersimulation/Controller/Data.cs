@@ -26,7 +26,8 @@ namespace NewspaperSellerSimulation.Controller
         public List<DemandDistribution> DemandDistributions;
         public Data()
         {
-
+            DemandDistributions = new List<DemandDistribution>();
+            _linesList = new List<string>();
         }
 
         public Data(string fileName)
@@ -114,14 +115,14 @@ namespace NewspaperSellerSimulation.Controller
                 sw.WriteLine(numberOfNewspapres);
                 sw.WriteLine("TotalNetProfit");
                 sw.WriteLine(totalNet);
-
+                
                 //Close the file
                 sw.Close();
             }
             else
             {
                 File.AppendAllText(path, Environment.NewLine + @"NumOfNewspapers" + Environment.NewLine + numberOfNewspapres +
-                    Environment.NewLine + @"TotalNetProfit" + totalNet);
+                    Environment.NewLine + @"TotalNetProfit" + Environment.NewLine + totalNet + Environment.NewLine);
             }  
         }
 
